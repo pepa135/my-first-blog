@@ -1,6 +1,7 @@
+models
+views
+urls
 tests
+apps
 migrations
 admin
-views
-apps
-models
