@@ -3,6 +3,6 @@ __pycache__
 myvenv
 db.sqlite3
 .DS_store
-Lib/*
-Scripts/*
-.pvts/*
+Lib/
+Scripts/
+.pvts/
