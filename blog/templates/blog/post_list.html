@@ -5,10 +5,16 @@
         </title>
     </head>
     <body>
-        <p>OK</p>
-        <a href="https://djangogirls.org">odkaz</a>
 
-        <h1>Seznam postu</h1>
-        <strong>Zvyrazneny text</strong>
+        <h1>Seznam prispevku</h1>
+
+        {%for post in posts%}
+        <div>
+            <h2>{{post.title}}</h2>
+            <p>Publikovano:{{post.published_date}}</p>
+            <p>Autor:{{post.author}}</p>
+            <p>{{post.text|linebreaksbr}}</p>
+        </div>
+        {%endfor%}
     </body>
 </html>
